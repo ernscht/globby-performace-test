@@ -1,0 +1,23 @@
+{
+  "name": "globby-performace-test",
+  "version": "0.0.1",
+  "description": "test preformance of different globby versions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernscht/globby-performace-test.git"
+  },
+  "author": "ernscht",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ernscht/globby-performace-test/issues"
+  },
+  "homepage": "https://github.com/ernscht/globby-performace-test#readme",
+  "dependencies": {
+    "globby": "7.1.1"
+  }
+}
