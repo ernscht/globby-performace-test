@@ -1,16 +1,23 @@
-const globby = require('globby');
+const cpuprofiler = require('sync-cpuprofiler');
+const sleep = require('system-sleep');
+const niv = require('npm-install-version');
+niv.install('globby@7.1.1');
+niv.install('globby@8.0.1');
 
-(function globbySync() {
-	const file = 'y/y.json';
-	const fileGlobs = ['one','two','three','four','five'].map((folder) => {
-		return `src/types/${folder}/*/sub/${file}`;
-    });
+const globby_7 = niv.require('globby@7.1.1');
+const globby_8 = niv.require('globby@8.0.1');
 
-	const timer1 = new Date();
-	globby.sync(fileGlobs).forEach((filePath) => {
-		console.log(`Success: File ${file} found in ${filePath}`);
-	});
-	const timer2 = new Date();
-	const diff = timer2 - timer1;
-	console.log(`[Time] for matching: ${diff} ms`);
-}());
+const globbySyncTest = require('./src/tasks/globby.sync');
+
+const testObjects = [
+	{ globby: globby_7, version: '7.1.1' },
+	{ globby: globby_8, version: '8.0.1' },
+];
+
+// create cpu profile (for chrome devtools)
+cpuprofiler();
+
+// test
+globbySyncTest(testObjects[0]);
+sleep(500); // sleep 500 ms
+globbySyncTest(testObjects[1]);

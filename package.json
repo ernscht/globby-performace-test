@@ -1,7 +1,7 @@
 {
   "name": "globby-performace-test",
   "version": "0.0.1",
-  "description": "test preformance of different globby versions",
+  "description": "test performance of different globby versions",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ernscht/globby-performace-test#readme",
   "dependencies": {
-    "globby": "7.1.1"
+    "npm-install-version": "6.0.2",
+    "sync-cpuprofiler": "1.1.1",
+    "system-sleep": "1.3.6"
   }
 }

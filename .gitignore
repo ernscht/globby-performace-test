@@ -1,0 +1,12 @@
+# IDE
+.idea
+.vscode
+*.iml
+out
+gen
+
+# node
+node_modules
+
+# project
+profiles
