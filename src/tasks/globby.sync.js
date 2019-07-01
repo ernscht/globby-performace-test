@@ -3,7 +3,7 @@
 function globbySync(obj) {
 
 	const file = 'y/y.json';
-	const fileGlobs = ['one','two','three','four','five'].map((folder) => {
+	const fileGlobs = ['one','two','three','four','five','six'].map((folder) => {
 		return `src/types/${folder}/*/sub/${file}`;
 	});
 
