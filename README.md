@@ -9,12 +9,15 @@ npm install
 npm start
 ```
 
-## time needed (on my machine):
+## time needed:
 
-* with globby 7.1.1: between 12 and 17 ms
-* with globby 8.0.2: between 117 and 203 ms
-* with globby 9.2.0: between 112 and 189 ms
-* with globby 10.0.1: between 29 and 70 ms
+100 runs - node 12.16.0 - Windows
+
+* globby 7.1.1: between 6 and 14 ms (average: 9ms)
+* globby 8.0.2: between 70 and 228 ms (average: 88ms)
+* globby 9.2.0: between 71 and 205 ms (average: 85ms)
+* globby 10.0.1: between 7 and 19 ms (average: 9ms)
+* globby 11.0.0: between 7 and 16 ms (average: 9ms)
 
 ## last but not least
 
