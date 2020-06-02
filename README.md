@@ -11,13 +11,13 @@ npm start
 
 ## time needed:
 
-100 runs - node 12.16.1 - Windows
+100 runs - node 12.18.0 - Windows 10
 
-* globby 7.1.1: between 6 and 14 ms (average: 9ms)
-* globby 8.0.2: between 73 and 144 ms (average: 91ms)
-* globby 9.2.0: between 71 and 169 ms (average: 92ms)
-* globby 10.0.1: between 6 and 20 ms (average: 9ms)
-* globby 11.0.0: between 6 and 19 ms (average: 9ms)
+* globby 7.1.1: between 7 and 21 ms (average: 10ms)
+* globby 8.0.2: between 83 and 189 ms (average: 104ms)
+* globby 9.2.0: between 85 and 192 ms (average: 104ms)
+* globby 10.0.1: between 7 and 25 ms (average: 11ms)
+* globby 11.0.1: between 7 and 24 ms (average: 11ms)
 
 ## last but not least
 
